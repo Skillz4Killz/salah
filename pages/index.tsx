@@ -2,6 +2,8 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Ayah from "@/components/Ayah";
+import { CHAPTER_ONE } from "@/constants/chapters/one";
+import Chapter from "@/components/Chapter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -235,6 +237,8 @@ const TABLE_OF_CONTENTS = [
   },
 ];
 
+const CHAPTERS = [CHAPTER_ONE];
+
 export default function Home() {
   return (
     <main
@@ -292,6 +296,11 @@ export default function Home() {
               </div>
             );
           })}
+        </div>
+
+        {/* Chapters */}
+        <div>
+          {CHAPTERS.map((chapter, i) => (<Chapter key={i} chapter={chapter} />))}
         </div>
       </div>
     </main>
