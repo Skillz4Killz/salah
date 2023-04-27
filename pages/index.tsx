@@ -2,8 +2,9 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Ayah from "@/components/Ayah";
-import { CHAPTER_ONE } from "@/constants/chapters/one";
-import Chapter from "@/components/Chapter";
+import CHAPTER_ONE from "@/constants/chapters/one.mdx";
+import { MDXProvider } from "@mdx-js/react";
+import { components } from "@/constants/mdx-components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -274,6 +275,7 @@ export default function Home() {
           })}
         </div>
 
+
         <h2 className="text-4xl text-center py-3">Table of Contents</h2>
         <div>
           {TABLE_OF_CONTENTS.map((content, index) => {
@@ -299,8 +301,15 @@ export default function Home() {
         </div>
 
         {/* Chapters */}
-        <div>
-          {CHAPTERS.map((chapter, i) => (<Chapter key={i} chapter={chapter} />))}
+        <div className="my-16">
+          <MDXProvider components={components}>
+            {CHAPTERS.map((Chapter, i) => {
+              return <div key={i}>
+                <h1></h1>
+                <Chapter />
+              </div>
+            })}
+          </MDXProvider>
         </div>
       </div>
     </main>
