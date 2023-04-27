@@ -4,7 +4,7 @@ import Ayah from "./Ayah";
 export function Content(props: ContentProps) {
   return (
     <div>
-      <h4>{props.content.name}</h4>
+      <h4 className="text-xl font-bold">{props.content.name}</h4>
       <br />
       
       {props.content.text.map((text, ii) => {

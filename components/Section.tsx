@@ -4,7 +4,7 @@ import Content from "./Content";
 export function Section(props: SectionProps) {
     return (
         <div>
-            <h3>{props.section.name}</h3>
+            <h3 className="text-2xl font-bold">{props.section.name}</h3>
             <br />
             {props.section.content.map((content, i) => (
                 <Content key={i} content={content} />
