@@ -48,10 +48,6 @@ const TABLE_OF_CONTENTS = [
     ],
   },
   {
-    name: "Importance of Salah",
-    sections: [{ name: "Missing Salah" }, { name: "Abandoning Salah" }],
-  },
-  {
     name: "Conditions of Salah",
     sections: [{ name: "Prohibited Locations for Salah" }],
   },
@@ -237,6 +233,10 @@ const TABLE_OF_CONTENTS = [
       { name: "Ayat Ul Kursi" },
       { name: "Tasbih" },
     ]
+  },
+  {
+    name: "Importance of Salah",
+    sections: [{ name: "Missing Salah" }, { name: "Abandoning Salah" }],
   },
   {
     name: "Special Notes",
