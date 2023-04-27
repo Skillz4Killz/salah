@@ -43,6 +43,8 @@ const TABLE_OF_CONTENTS = [
       { name: "Definition of Salah" },
       { name: "Effects of Salah" },
       { name: "Al Isra' Wal Miraj" },
+      { name: "Why Arabic?" },
+      { name: "Understanding Hadiths" },
     ],
   },
   {
@@ -57,10 +59,10 @@ const TABLE_OF_CONTENTS = [
   {
     name: "Wudu",
     sections: [
-      { name: "the definition of wudoo" },
-      { name: "the prescription of wudoo in the kitaab and sunnah:" },
-      { name: "the excellence of wudoo" },
-      { name: "the components of wudoo" },
+      { name: "The definition of wudoo" },
+      { name: "The prescription of wudoo in the kitaab and sunnah:" },
+      { name: "The excellence of wudoo" },
+      { name: "The components of wudoo" },
       { name: "at-tasmiyyah (mentioning allaah's name) " },
       { name: "washing the hands" },
       {
@@ -72,34 +74,34 @@ const TABLE_OF_CONTENTS = [
       { name: "running water through the beard with the fingers " },
       { name: "washing the arms including the elbows " },
       { name: "wiping the head and ears and 'imaamah " },
-      { name: "taking fresh water for the head and ears " },
-      { name: "the way of wiping " },
+      { name: "Taking fresh water for the head and ears " },
+      { name: "The way of wiping " },
       { name: "wiping over the 'imaamah (turban) only " },
       { name: "wiping over the turban and forelock " },
       { name: "washing the feet and ankles " },
       {
-        name: "the reply to those who follow wiping of the feet without washing ",
+        name: "The reply to those who follow wiping of the feet without washing ",
       },
       { name: "other aspects of wudoo " },
-      { name: "the siwaak " },
+      { name: "The siwaak " },
       { name: "performing the wudoo in the order mentioned in the ayaah " },
       {
         name: "al-mawaalaat (washing each part directly after the previous one - leaving no time gap in betwee",
       },
       { name: "beginning with the right " },
       { name: "economizing in the use of water and not being wasteful " },
-      { name: "the du'aa after the wudoo " },
+      { name: "The du'aa after the wudoo " },
       { name: "washing each body-part once " },
       { name: "washing each body-part twice " },
       { name: "washing each body-part thrice " },
-      { name: "the desirability of making wudoo for each prayer " },
+      { name: "The desirability of making wudoo for each prayer " },
       {
-        name: "the one who is not sure if he has broken the wudoo or not relies upon that which he is certain of ",
+        name: "The one who is not sure if he has broken the wudoo or not relies upon that which he is certain of ",
       },
       { name: "a man and woman's washing from a single vessel " },
       { name: "making wudoo after eating camel meat " },
       { name: "drying the body parts after purification " },
-      { name: "those things which break wudoo " },
+      { name: "Those things which break wudoo " },
     ],
   },
   { name: "Facing The Kaabah" },
@@ -221,6 +223,8 @@ const TABLE_OF_CONTENTS = [
     name: "Special Salahs",
     sections: [
       { name: "Jumuah" },
+      { name: "Tahajud" },
+      { name: "Tasbih" },
       { name: "Eid" },
       { name: "Jannazah" },
       { name: "Entering Masjid" },
@@ -228,8 +232,16 @@ const TABLE_OF_CONTENTS = [
     ],
   },
   {
+    name: "Post-Salah Actions",
+    sections: [
+      { name: "Ayat Ul Kursi" },
+      { name: "Tasbih" },
+    ]
+  },
+  {
     name: "Special Notes",
     sections: [
+      { name: "Handling Distractions" },
       { name: "Praying Behind An Imam" },
       { name: "Praying Directly Behind An Imam" },
       { name: "Praying As The Imam" },
