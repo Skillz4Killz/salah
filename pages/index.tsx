@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Ayah from "@/components/Ayah";
 import { CHAPTER_ONE } from "@/constants/chapters/one";
 import Chapter from "@/components/Chapter";
+import SectionHeader from "@/components/SectionHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -254,19 +255,21 @@ const CHAPTERS = [CHAPTER_ONE];
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center justify-between px-8 py-6 md:px-24 md:py-16 ${inter.className}`}
     >
-      <div>
+      <div className="flex flex-col">
         {/* TODO: cover - Make the cover page look nicer */}
-        <h1 className="text-4xl text-center pb-3">Perfecting Your Salah</h1>
-        <Image
-          src="https://media.discordapp.net/attachments/968119334360739843/1100516264130121878/image.png?width=2202&height=1010"
-          width={600}
-          height={300}
-          alt="bismillah"
-        />
+        <h1 className="text-4xl text-center font-bold pb-2 mb-3 border-b-[1px] ">Perfecting Your Salah</h1>
+        <div className="flex items-center justify-center">
+          <Image
+            src="https://media.discordapp.net/attachments/968119334360739843/1100516264130121878/image.png?width=2202&height=1010"
+            width={600}
+            height={300}
 
-        <h2 className="text-4xl text-center py-3">Forward</h2>
+            alt="bismillah"
+          /></div>
+
+        <SectionHeader>Forward</SectionHeader>
         <div>
           {FOREWARD.map((text, index) => {
             if (text.startsWith("salahayahabc")) {
@@ -286,7 +289,7 @@ export default function Home() {
           })}
         </div>
 
-        <h2 className="text-4xl text-center py-3">Table of Contents</h2>
+        <SectionHeader>Table of Contents</SectionHeader>
         <div>
           {TABLE_OF_CONTENTS.map((content, index) => {
             return (
