@@ -6,7 +6,6 @@ import Ayah from "@/components/Ayah";
 import CHAPTER_ONE from "@/constants/chapters/one.mdx";
 import { MDXProvider } from "@mdx-js/react";
 import { components } from "@/constants/mdx-components";
-import Chapter from "@/components/Chapter";
 import SectionHeader from "@/components/SectionHeader";
 
 const inter = Inter({ subsets: ["latin"] });
