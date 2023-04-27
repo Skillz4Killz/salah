@@ -1,6 +1,6 @@
 interface HadithProps {
     text: string;
-    number: number;
+    number: number | string;
     book: string;
 }
 
@@ -21,7 +21,7 @@ export function Hadith(props: HadithProps) {
 
         <div className="w-full">
           <p className="text-md text-cyan-500 font-bold text-center">
-            {props.book} Hadith #{props.number.toLocaleString()}
+            {props.book} Hadith #{typeof props.number === "string" ? props.number : props.number.toLocaleString()}
           </p>
         </div>
       </div>
